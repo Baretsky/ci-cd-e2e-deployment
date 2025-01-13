@@ -14,7 +14,7 @@ pipeline{
 
         stage("Checkout from SCM"){
             steps{
-                git branch: 'main', credentialsId: 'github' url: 'https://github.com/Baretsky/ci-cd-e2e-deployment'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Baretsky/ci-cd-e2e-deployment'
             }
         }
 
