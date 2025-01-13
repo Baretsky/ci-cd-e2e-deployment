@@ -17,7 +17,7 @@ spec:
           image: baretsky24/ci-cd-e2e:1.0.0-12
           ressources:
             limits:
-              memory: "256Mi"
-              cpu: "500m"
+              memory: "128Mi"
+              cpu: "200m"
           ports:
             - containerPort: 8080
