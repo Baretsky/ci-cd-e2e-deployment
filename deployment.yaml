@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ci-cd-e2e-app
-          image: baretsky24/ci-cd-e2e:1.0.0-11
+          image: baretsky24/ci-cd-e2e:1.0.0-12
           ressources:
             limits:
               memory: "256Mi"
