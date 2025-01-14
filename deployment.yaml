@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ci-cd-e2e-deployment
+  name: ci-cd-e2e:1.0.0-24
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ci-cd-e2e-app
+      app: ci-cd-e2e:1.0.0-24
   template:
     metadata:
       labels:
-        app: ci-cd-e2e-app
+        app: ci-cd-e2e:1.0.0-24
     spec:
       containers:
-        - name: ci-cd-e2e-app
-          image: baretsky24/ci-cd-e2e:1.0.0-22
+        - name: ci-cd-e2e:1.0.0-24
+          image: baretsky24/ci-cd-e2e:1.0.0-24
           ressources:
             limits:
               memory: "256Mi"
