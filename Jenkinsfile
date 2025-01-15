@@ -22,7 +22,7 @@ pipeline{
             steps{
                 sh """
                     cat deployment.yaml
-                    sed -i "s/"baretsky24/${APP_NAME}.*"/"baretsky24/${APP_NAME}:${IMAGE_TAG}"/g" deployment.yaml
+                    sed -i "s|baretsky24/${APP_NAME}:.*|baretsky24/${APP_NAME}:${IMAGE_TAG}|g" deployment.yaml
                     cat deployment.yaml
                 """
             }
